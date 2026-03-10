@@ -1,43 +1,71 @@
 <!DOCTYPE html>
+<!-- CO1: Internet Fundamentals – HTML5 Document Declaration -->
+
 <html>
+<!-- CO1: HTML Document Structure – Root element of the webpage -->
 
 <head>
     <meta charset="UTF-8">
+    <!-- CO5: SEO & Page Optimization – Meta tag defining character encoding -->
+
     <title>Portfolio Creator</title>
+    <!-- CO1: HTML Document Structure – Title displayed in browser tab -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- CO1: Introductory CSS Styling – Linking external CSS file -->
 </head>
 
 <body>
+    <!-- CO1: HTML Document Structure – Body contains visible webpage content -->
 
     <header>
+        <!-- CO2: Semantic & Structured Content – Semantic tag for page header -->
+
         <h1>Portfolio Creator</h1>
+        <!-- CO1: HTML Content – Heading element -->
+
         <p>Create your professional portfolio instantly</p>
+        <!-- CO1: HTML Content – Paragraph element -->
     </header>
 
     <!-- FORM -->
 
     <section class="form-section" id="formPage">
+        <!-- CO2: Semantic & Structured Content – Section tag used to group form content -->
+        <!-- CO2: CSS Styling Hook – class and id used for styling and DOM access -->
 
         <h2>Enter Your Details</h2>
+        <!-- CO1: HTML Content – Heading element -->
 
         <div class="form-container">
+            <!-- CO2: Structured Layout – Div container used for layout and styling -->
 
             <input type="text" id="name" placeholder="Full Name" required>
+            <!-- CO2: Forms & Input Handling – Text input with required validation -->
 
             <input type="text" id="title" placeholder="Professional Title" required>
+            <!-- CO2: Forms & Input Handling – Text input with placeholder and validation -->
 
             <input type="file" id="image">
+            <!-- CO2: Forms & Input Handling – File input to upload profile image -->
 
             <input type="email" id="email" placeholder="Email Address" required>
+            <!-- CO2: Forms & Input Handling – Email input with built-in validation -->
 
             <textarea id="about" placeholder="About You"></textarea>
+            <!-- CO2: Forms & Input Handling – Textarea for multi-line user input -->
 
             <textarea id="education" placeholder="Education"></textarea>
+            <!-- CO2: Forms & Input Handling – Textarea for education details -->
 
             <textarea id="experience" placeholder="Experience"></textarea>
+            <!-- CO2: Forms & Input Handling – Textarea for experience details -->
+
             <textarea id="skills" placeholder="Skills"></textarea>
+            <!-- CO2: Forms & Input Handling – Textarea for skills -->
 
             <button onclick="generatePortfolio()">Generate Portfolio</button>
+            <!-- CO4: JavaScript DOM & Events – onclick event triggers JavaScript function -->
 
         </div>
 
@@ -47,41 +75,66 @@
     <!-- PORTFOLIO -->
 
     <section class="portfolio" id="portfolioPage">
+        <!-- CO2: Semantic & Structured Content – Section used for portfolio display -->
+        <!-- CO4: DOM Manipulation – id used for showing/hiding with JavaScript -->
 
         <div class="portfolio-container">
+            <!-- CO2: CSS Layout – Container used for page layout -->
 
             <div class="sidebar">
+                <!-- CO2: CSS Layout – Sidebar section for profile details -->
 
                 <img id="pImage" class="profile-img">
+                <!-- CO2: Media Tag – Image element for displaying uploaded profile image -->
+                <!-- CO4: DOM Manipulation – Image source updated dynamically using JavaScript -->
 
                 <h2 id="pName"></h2>
+                <!-- CO4: DOM Manipulation – Content dynamically inserted using JavaScript -->
 
                 <h4 id="pTitle"></h4>
+                <!-- CO4: DOM Manipulation – Displays professional title dynamically -->
 
                 <p id="pEmail"></p>
+                <!-- CO4: DOM Manipulation – Displays email dynamically -->
 
             </div>
 
             <div class="content">
+                <!-- CO2: CSS Layout – Main content area -->
 
                 <div class="card">
+                    <!-- CO2: CSS Styling/Layout – Card component container -->
+
                     <h3>About</h3>
+                    <!-- CO1: HTML Content – Heading -->
+
                     <p id="pAbout"></p>
+                    <!-- CO4: DOM Manipulation – About information inserted dynamically -->
                 </div>
 
                 <div class="card">
+
                     <h3>Education</h3>
+
                     <p id="pEducation"></p>
+                    <!-- CO4: DOM Manipulation – Education details updated via JavaScript -->
                 </div>
 
                 <div class="card">
+
                     <h3>Skills</h3>
+
                     <ul id="pSkills"></ul>
+                    <!-- CO1: HTML Content – Unordered list -->
+                    <!-- CO4: DOM Manipulation – Skills added dynamically using JavaScript -->
                 </div>
 
                 <div class="card">
+
                     <h3>Experience</h3>
+
                     <p id="pExperience"></p>
+                    <!-- CO4: DOM Manipulation – Experience details inserted dynamically -->
                 </div>
 
             </div>
@@ -91,10 +144,8 @@
     </section>
 
     <script src="project.js"></script>
-
-</body>
-
-</html>
+    <!-- CO3: JavaScript Programming Essentials – Linking external JavaScript file -->
+    <!-- CO4: DOM Manipulation & Events handled inside JavaScript -->
 
 </body>
 
