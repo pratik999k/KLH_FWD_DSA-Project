@@ -91,8 +91,10 @@ public class PortfolioDSA {
         System.out.print("Enter Name: ");
         String name = sc.nextLine();
 
-        System.out.print("Enter Title: ");
-        String title = sc.nextLine();
+            System.out.print("Enter Title: ");
+            String title = sc.nextLine();
+            System.out.print("Enter About: ");
+            String about = sc.nextLine();   
 
         System.out.print("Enter Email: ");
         String email = sc.nextLine();
@@ -145,7 +147,7 @@ public class PortfolioDSA {
 
         System.out.println("\nABOUT");
         System.out.println("--------------------------------");
-        System.out.println("Experienced and passionate developer.");
+        System.out.println(about);
 
         System.out.println("\nEDUCATION");
         System.out.println("--------------------------------");
